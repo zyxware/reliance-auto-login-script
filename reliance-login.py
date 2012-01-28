@@ -20,7 +20,10 @@ import urllib2, urllib, cookielib, time, re, sys
 
 username = 'username' 
 password = 'password'
+
+'''You don't normally have to edit anything below this line'''
 debug = False
+check_interval = 600
 
 if ((len(sys.argv) > 2) and (sys.argv[2] == '-d')): debug = True
 
@@ -79,7 +82,7 @@ def internet_keep_alive():
     else:
       if debug: print "Connected"
       pass
-    time.sleep(10)
+    time.sleep(check_interval)
 
 def print_usage():
   print "Reliance Netconnect AutoLogin"
