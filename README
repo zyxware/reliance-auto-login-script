@@ -1,0 +1,28 @@
+-------------------------------------------------------------
+Reliance Auto Login Script
+Copyright (c) 2009 Kunal Dua, http://www.kunaldua.com/blog/?p=330
+Copyright (c) 2012 Anoop John, http://www.zyxware.com
+-------------------------------------------------------------
+Usage: reliance-login.sh [login|logout|*]
+  login - Logs in.
+  logout - Disconnect.
+  * - Print help and exit
+
+If there are no arguments it runs in an infinite loop and will try to remain connected to the internet.
+
+Setup Instructions
+------------------
+a) Copy script to your favorite scripts folder.
+b) Edit script to update username and password with your Reliance login 
+   information. This is in function internet_connect
+c) Add script to your list of startup processes. 
+
+Different ways of using the script
+----------------------------------
+1) Add a shortcut to your task bar to launch the script with the parameter
+   "login". 
+2) Add the script to your startup processes without any parameters. This will
+   keep the script running in the background and the script will keep the
+   connection alive.   
+
+
